@@ -1,0 +1,17 @@
+---
+- name: My task
+  hosts: ubuntu
+  become: yes
+  tasks:
+    - name: Install softwares
+      tags: requirements
+      package:
+        name: 
+        - docker.io
+        - docker-compose
+
+    - name: Add users
+      tags: users
+      user:
+        name: ana
+        group: sudo
