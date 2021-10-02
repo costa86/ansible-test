@@ -4,7 +4,7 @@
   gather_facts: no
   become: yes
   tasks:
-    - name: Install requirements
+    - name: Install packages
       tags: packages
       package:
         name: 
@@ -51,3 +51,7 @@
         user: costa
       with_file:
         - ../keys/sample.pub
+
+    - debug:
+        msg: hello
+        
