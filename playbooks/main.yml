@@ -15,11 +15,11 @@
     - name: Add users
       tags: users
       user:
-        name: "{{ item }}"
-        groups: docker, sudo
-      with_items:
-        - ana
-        - maria
+        name: "{{ item.name }}"
+        groups: "{{ item.groups }}"
+      loop:
+        - { name: maria, groups: docker }
+        - { name: ana, groups: "docker,sudo" }
 
     - name: Copy Terraform file
       tags: terraform

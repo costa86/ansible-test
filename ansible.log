@@ -257,3 +257,76 @@ UBUNTU_CODENAME=hirsute
 2021-10-02 16:45:16,451 p=73369 u=costa n=ansible | ok: [server-one] => (item=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL4IZ+56yhnjJxez+cK8bgsfNZgLQfJ0/o9pkhq7EUFz sample)
 2021-10-02 16:45:16,459 p=73369 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
 2021-10-02 16:45:16,459 p=73369 u=costa n=ansible | server-one                 : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-10-02 16:53:58,882 p=73546 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-02 16:53:58,899 p=73546 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-02 16:53:58,943 p=73546 u=costa n=ansible | TASK [Install requirements] **********************************************************************************************************************************
+2021-10-02 16:54:01,308 p=73546 u=costa n=ansible | ok: [server-one]
+2021-10-02 16:54:01,311 p=73546 u=costa n=ansible | TASK [Add users] *********************************************************************************************************************************************
+2021-10-02 16:54:01,807 p=73546 u=costa n=ansible | ok: [server-one] => (item=ana)
+2021-10-02 16:54:02,151 p=73546 u=costa n=ansible | ok: [server-one] => (item=maria)
+2021-10-02 16:54:02,159 p=73546 u=costa n=ansible | TASK [Copy Terraform file] ***********************************************************************************************************************************
+2021-10-02 16:54:04,879 p=73546 u=costa n=ansible | changed: [server-one]
+2021-10-02 16:54:04,891 p=73546 u=costa n=ansible | TASK [Install Terraform] *************************************************************************************************************************************
+2021-10-02 16:54:06,077 p=73546 u=costa n=ansible | ok: [server-one]
+2021-10-02 16:54:06,089 p=73546 u=costa n=ansible | TASK [Delete Terraform zip] **********************************************************************************************************************************
+2021-10-02 16:54:06,520 p=73546 u=costa n=ansible | changed: [server-one]
+2021-10-02 16:54:06,523 p=73546 u=costa n=ansible | TASK [Update Apache index file] ******************************************************************************************************************************
+2021-10-02 16:54:07,197 p=73546 u=costa n=ansible | ok: [server-one]
+2021-10-02 16:54:07,201 p=73546 u=costa n=ansible | TASK [Add SSH key] *******************************************************************************************************************************************
+2021-10-02 16:54:07,786 p=73546 u=costa n=ansible | ok: [server-one] => (item=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL4IZ+56yhnjJxez+cK8bgsfNZgLQfJ0/o9pkhq7EUFz sample)
+2021-10-02 16:54:07,794 p=73546 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-02 16:54:07,794 p=73546 u=costa n=ansible | server-one                 : ok=7    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-10-02 16:56:08,445 p=73692 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-02 16:56:08,461 p=73692 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-02 16:56:08,502 p=73692 u=costa n=ansible | TASK [Install requirements] **********************************************************************************************************************************
+2021-10-02 16:56:10,919 p=73692 u=costa n=ansible | ok: [server-one]
+2021-10-02 16:56:10,922 p=73692 u=costa n=ansible | TASK [Add users] *********************************************************************************************************************************************
+2021-10-02 16:56:11,410 p=73692 u=costa n=ansible | ok: [server-one] => (item=ana)
+2021-10-02 16:56:11,744 p=73692 u=costa n=ansible | ok: [server-one] => (item=maria)
+2021-10-02 16:56:12,161 p=73692 u=costa n=ansible | changed: [server-one] => (item=pedro)
+2021-10-02 16:56:12,169 p=73692 u=costa n=ansible | TASK [Copy Terraform file] ***********************************************************************************************************************************
+2021-10-02 16:56:14,897 p=73692 u=costa n=ansible | changed: [server-one]
+2021-10-02 16:56:14,902 p=73692 u=costa n=ansible | TASK [Install Terraform] *************************************************************************************************************************************
+2021-10-02 16:56:16,100 p=73692 u=costa n=ansible | ok: [server-one]
+2021-10-02 16:56:16,104 p=73692 u=costa n=ansible | TASK [Delete Terraform zip] **********************************************************************************************************************************
+2021-10-02 16:56:16,567 p=73692 u=costa n=ansible | changed: [server-one]
+2021-10-02 16:56:16,570 p=73692 u=costa n=ansible | TASK [Update Apache index file] ******************************************************************************************************************************
+2021-10-02 16:56:17,273 p=73692 u=costa n=ansible | ok: [server-one]
+2021-10-02 16:56:17,277 p=73692 u=costa n=ansible | TASK [Add SSH key] *******************************************************************************************************************************************
+2021-10-02 16:56:17,897 p=73692 u=costa n=ansible | ok: [server-one] => (item=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL4IZ+56yhnjJxez+cK8bgsfNZgLQfJ0/o9pkhq7EUFz sample)
+2021-10-02 16:56:17,906 p=73692 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-02 16:56:17,906 p=73692 u=costa n=ansible | server-one                 : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-10-02 16:58:49,859 p=73877 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-02 16:58:49,876 p=73877 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-02 16:58:49,917 p=73877 u=costa n=ansible | TASK [Add users] *********************************************************************************************************************************************
+2021-10-02 16:58:50,862 p=73877 u=costa n=ansible | changed: [server-one] => (item={'name': 'lucas', 'groups': 'docker'})
+2021-10-02 16:58:51,226 p=73877 u=costa n=ansible | changed: [server-one] => (item={'name': 'diego', 'groups': 'docker', 'sudo': None})
+2021-10-02 16:58:51,233 p=73877 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-02 16:58:51,233 p=73877 u=costa n=ansible | server-one                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-10-02 16:59:58,715 p=73935 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-02 16:59:58,733 p=73935 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-02 16:59:58,774 p=73935 u=costa n=ansible | TASK [Add users] *********************************************************************************************************************************************
+2021-10-02 16:59:59,638 p=73935 u=costa n=ansible | ok: [server-one] => (item={'name': 'lucas', 'groups': 'docker'})
+2021-10-02 16:59:59,974 p=73935 u=costa n=ansible | failed: [server-one] (item={'name': 'diego', 'groups': 'docker sudo'}) => {"ansible_loop_var": "item", "changed": false, "item": {"groups": "docker sudo", "name": "diego"}, "msg": "Group docker sudo does not exist"}
+2021-10-02 16:59:59,976 p=73935 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-02 16:59:59,977 p=73935 u=costa n=ansible | server-one                 : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-10-02 17:00:23,343 p=73982 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-02 17:00:23,360 p=73982 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-02 17:00:23,399 p=73982 u=costa n=ansible | TASK [Add users] *********************************************************************************************************************************************
+2021-10-02 17:00:24,005 p=73982 u=costa n=ansible | ok: [server-one] => (item={'name': 'lucas', 'groups': 'docker'})
+2021-10-02 17:00:24,360 p=73982 u=costa n=ansible | changed: [server-one] => (item={'name': 'diego', 'groups': 'docker,sudo'})
+2021-10-02 17:00:24,368 p=73982 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-02 17:00:24,368 p=73982 u=costa n=ansible | server-one                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-10-02 17:00:54,640 p=74033 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-02 17:00:54,657 p=74033 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-02 17:00:54,697 p=74033 u=costa n=ansible | TASK [Add users] *********************************************************************************************************************************************
+2021-10-02 17:00:55,330 p=74033 u=costa n=ansible | changed: [server-one] => (item={'name': 'fidelia', 'groups': 'docker'})
+2021-10-02 17:00:55,666 p=74033 u=costa n=ansible | ok: [server-one] => (item={'name': 'diego', 'groups': 'docker,sudo'})
+2021-10-02 17:00:55,673 p=74033 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-02 17:00:55,673 p=74033 u=costa n=ansible | server-one                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
