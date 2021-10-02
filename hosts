@@ -1,5 +1,6 @@
 [ubuntu]
-172.16.14.128
+server-one ansible_host=172.16.14.128
 
 [ubuntu:vars]
-ansible_become_pass=12345
+ansible_sudo_pass=12345
+terraform_zip=/home/costa/terraform_1.0.8_linux_amd64.zip

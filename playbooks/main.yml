@@ -1,17 +1,53 @@
 ---
-- name: My task
+- name: Main Tasks
   hosts: ubuntu
+  gather_facts: no
   become: yes
   tasks:
-    - name: Install softwares
-      tags: requirements
+    - name: Install requirements
+      tags: packages
       package:
         name: 
         - docker.io
         - docker-compose
+        - apache2
 
     - name: Add users
       tags: users
       user:
-        name: ana
-        group: sudo
+        name: "{{ item }}"
+        groups: docker, sudo
+      with_items:
+        - ana
+        - maria
+
+    - name: Copy Terraform file
+      tags: terraform
+      copy:
+        src: ../download/terraform_1.0.8_linux_amd64.zip
+        dest: "{{ terraform_zip }}"
+
+    - name: Install Terraform
+      tags: terraform
+      unarchive:
+        src: "{{ terraform_zip }}"
+        dest: /usr/local/bin
+        remote_src: yes
+
+    - name: Delete Terraform zip
+      tags: terraform
+      command: rm "{{ terraform_zip }}"
+
+    - name: Update Apache index file
+      tags: apache
+      copy:
+        src: ../media/index.html
+        dest: /var/www/html/index.html
+
+    - name: Add SSH key
+      tags: ssh
+      authorized_key:
+        key: "{{ item }}"
+        user: costa
+      with_file:
+        - ../keys/sample.pub
