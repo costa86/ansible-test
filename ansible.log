@@ -354,3 +354,98 @@ UBUNTU_CODENAME=hirsute
 2021-10-02 17:06:31,760 p=74207 u=costa n=ansible | ok: [server-one] => (item=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL4IZ+56yhnjJxez+cK8bgsfNZgLQfJ0/o9pkhq7EUFz sample)
 2021-10-02 17:06:31,768 p=74207 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
 2021-10-02 17:06:31,768 p=74207 u=costa n=ansible | server-one                 : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-10-03 11:22:55,984 p=13569 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-03 11:22:56,003 p=13569 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-03 11:22:56,050 p=13569 u=costa n=ansible | TASK [Fetch file] ********************************************************************************************************************************************
+2021-10-03 11:22:57,045 p=13569 u=costa n=ansible | changed: [server-one]
+2021-10-03 11:22:57,051 p=13569 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-03 11:22:57,051 p=13569 u=costa n=ansible | server-one                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-10-03 11:25:27,680 p=14139 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-03 11:25:27,698 p=14139 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-03 11:25:27,740 p=14139 u=costa n=ansible | TASK [Fetch file] ********************************************************************************************************************************************
+2021-10-03 11:25:28,588 p=14139 u=costa n=ansible | changed: [server-one]
+2021-10-03 11:25:28,598 p=14139 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-03 11:25:28,598 p=14139 u=costa n=ansible | server-one                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-10-03 11:25:37,767 p=14167 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-03 11:25:37,784 p=14167 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-03 11:25:37,825 p=14167 u=costa n=ansible | TASK [Fetch file] ********************************************************************************************************************************************
+2021-10-03 11:25:38,304 p=14167 u=costa n=ansible | ok: [server-one]
+2021-10-03 11:25:38,310 p=14167 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-03 11:25:38,311 p=14167 u=costa n=ansible | server-one                 : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-10-03 11:25:51,644 p=14194 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-03 11:25:51,661 p=14194 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-03 11:25:51,703 p=14194 u=costa n=ansible | TASK [Fetch file] ********************************************************************************************************************************************
+2021-10-03 11:25:52,183 p=14194 u=costa n=ansible | fatal: [server-one]: FAILED! => {"msg": "Unable to create local directories(/home/costa/treasure/ansible/one/playbooks/cool.txt/server-one): [Errno 20] Not a directory: b'/home/costa/treasure/ansible/one/playbooks/cool.txt/server-one'"}
+2021-10-03 11:25:52,184 p=14194 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-03 11:25:52,184 p=14194 u=costa n=ansible | server-one                 : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-10-03 11:26:00,340 p=14223 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-03 11:26:00,358 p=14223 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-03 11:26:00,399 p=14223 u=costa n=ansible | TASK [Fetch file] ********************************************************************************************************************************************
+2021-10-03 11:26:00,878 p=14223 u=costa n=ansible | fatal: [server-one]: FAILED! => {"msg": "Unable to create local directories(/home/costa/treasure/ansible/one/playbooks/cool.txt/server-one): [Errno 20] Not a directory: b'/home/costa/treasure/ansible/one/playbooks/cool.txt/server-one'"}
+2021-10-03 11:26:00,879 p=14223 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-03 11:26:00,879 p=14223 u=costa n=ansible | server-one                 : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-10-03 11:26:48,263 p=14295 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-03 11:26:48,281 p=14295 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-03 11:26:48,322 p=14295 u=costa n=ansible | TASK [Fetch file] ********************************************************************************************************************************************
+2021-10-03 11:26:48,801 p=14295 u=costa n=ansible | changed: [server-one]
+2021-10-03 11:26:48,808 p=14295 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-03 11:26:48,808 p=14295 u=costa n=ansible | server-one                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-10-03 11:26:57,442 p=14328 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-03 11:26:57,459 p=14328 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-03 11:26:57,501 p=14328 u=costa n=ansible | TASK [Fetch file] ********************************************************************************************************************************************
+2021-10-03 11:26:57,977 p=14328 u=costa n=ansible | ok: [server-one]
+2021-10-03 11:26:57,983 p=14328 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-03 11:26:57,983 p=14328 u=costa n=ansible | server-one                 : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-10-03 11:28:36,584 p=14397 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-03 11:28:36,602 p=14397 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-03 11:28:36,644 p=14397 u=costa n=ansible | TASK [Fetch file] ********************************************************************************************************************************************
+2021-10-03 11:28:37,465 p=14397 u=costa n=ansible | changed: [server-one]
+2021-10-03 11:28:37,472 p=14397 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-03 11:28:37,472 p=14397 u=costa n=ansible | server-one                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-10-03 11:34:46,782 p=14530 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-03 11:34:46,800 p=14530 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-03 11:34:46,842 p=14530 u=costa n=ansible | TASK [Fetch file] ********************************************************************************************************************************************
+2021-10-03 11:34:47,635 p=14530 u=costa n=ansible | changed: [server-one]
+2021-10-03 11:34:47,642 p=14530 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-03 11:34:47,642 p=14530 u=costa n=ansible | server-one                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-10-03 11:35:19,821 p=14582 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-03 11:35:19,839 p=14582 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-03 11:35:19,882 p=14582 u=costa n=ansible | TASK [Fetch file] ********************************************************************************************************************************************
+2021-10-03 11:35:20,375 p=14582 u=costa n=ansible | ok: [server-one]
+2021-10-03 11:35:20,382 p=14582 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-03 11:35:20,382 p=14582 u=costa n=ansible | server-one                 : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-10-03 11:39:45,130 p=14667 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-03 11:39:45,147 p=14667 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-03 11:39:45,189 p=14667 u=costa n=ansible | TASK [Fetch file] ********************************************************************************************************************************************
+2021-10-03 11:39:45,930 p=14667 u=costa n=ansible | changed: [server-one]
+2021-10-03 11:39:45,937 p=14667 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-03 11:39:45,937 p=14667 u=costa n=ansible | server-one                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-10-03 11:40:01,466 p=14714 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-03 11:40:01,484 p=14714 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-03 11:40:01,526 p=14714 u=costa n=ansible | TASK [Fetch file] ********************************************************************************************************************************************
+2021-10-03 11:40:02,004 p=14714 u=costa n=ansible | ok: [server-one]
+2021-10-03 11:40:02,010 p=14714 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-03 11:40:02,010 p=14714 u=costa n=ansible | server-one                 : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-10-03 11:40:54,919 p=14756 u=costa n=ansible | [WARNING]: packaging Python module unavailable; unable to validate collection Ansible version requirements
+
+2021-10-03 11:40:54,936 p=14756 u=costa n=ansible | PLAY [Main Tasks] ********************************************************************************************************************************************
+2021-10-03 11:40:54,975 p=14756 u=costa n=ansible | TASK [Add users] *********************************************************************************************************************************************
+2021-10-03 11:40:55,594 p=14756 u=costa n=ansible | ok: [server-one] => (item={'name': 'maria', 'groups': 'docker'})
+2021-10-03 11:40:55,930 p=14756 u=costa n=ansible | ok: [server-one] => (item={'name': 'ana', 'groups': 'docker,sudo'})
+2021-10-03 11:40:56,303 p=14756 u=costa n=ansible | changed: [server-one] => (item={'name': 'marcos', 'groups': 'docker'})
+2021-10-03 11:40:56,309 p=14756 u=costa n=ansible | TASK [Fetch file] ********************************************************************************************************************************************
+2021-10-03 11:40:56,717 p=14756 u=costa n=ansible | changed: [server-one]
+2021-10-03 11:40:56,724 p=14756 u=costa n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2021-10-03 11:40:56,724 p=14756 u=costa n=ansible | server-one                 : ok=2    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
