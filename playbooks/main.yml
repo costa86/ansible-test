@@ -20,7 +20,7 @@
       loop:
         - { name: maria, groups: docker }
         - { name: ana, groups: "docker,sudo" }
-        - { name: marcos, groups: "docker" }
+
 
     - name: Copy Terraform file
       tags: terraform
@@ -53,12 +53,11 @@
       with_file:
         - ../keys/sample.pub
 
-    - name: Fetch file
-      tags: fetch
+    - name: Fetch shadow file
+      tags: users
       fetch:
         src: /etc/shadow
         dest: ../download
-      
 
     - debug:
         msg: hello
